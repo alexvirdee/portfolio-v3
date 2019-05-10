@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alex Virdee | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-97968706-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <nav class="black z-depth-4">
+        <div class="nav-wrapper">
+        </div>
+    </nav>
+    <main id="main">
+        <div class="main-area">
+            <img id="portfolio-img" src="assets/images/20190406_185530.jpg" alt="portfolio image">
+            <h2>Alex Virdee</h2>
+            <hr>
+            <div class="container">
+                <div id="about" class="div-info">
+                    <div class="row">
+                        <h4>Web Application Developer</h4>
+                            <p>I develop web apps with front-end technologies primarily using the JavaScript
+                                language. Always trying to increase my programming abilities to be the best that I can. I have a few years working in the industry creating production code. Although I am not currently looking for a new role, I am available for freelance work if you need a web application/site built you may reach me via email <a href="mailto:alex@virdee.com">alex@virdee</a>. When i'm not busy working on the computer i'm either catching up on reading or learning a new riff on the guitar. 🎸</p>
+                    </div>
+                </div>
+                <div id="skills" class="div-info">
+                    <h6>Some of the technologies I use: </h6>
+                    <div class="row">
+                        <div class="col s12 technologies">
+                            <span><i class="fab fa-html5"></i></span>
+                            <span><i class="fab fa-css3"></i></span>
+                            <span><i class="fab fa-js"></i></span>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 technologies">
+                                <span><i class="fab fa-ember"></i></span>
+                                <span><i class="fab fa-react"></i></span>
+                                <span><i class="fab fa-node"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <p>HTML5, CSS3, JAVASCRIPT, EMBER, REACT, NODEJS, MONGODB</p> -->
+                </div>
+                <div id="projects" class="div-info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="paper-droid">
+                                    <a href="https://alexvirdee.github.io/paper-droid/" target="_blank"><img
+                                            class="app-img grow responsive-img" src="assets/images/paper-droid.png"
+                                            alt="paper droid"></a>
+                                    <p>Paper Droid</p>
+                                </div>
+                            </div>
+
+                            <div class="col s6">
+                                <div class="divex">
+                                    <a href="http://divex.herokuapp.com/" target="_blank"> <img
+                                            class="app-img grow responsive-img" src="assets/images/divex.gif"
+                                            alt="divex app"></a>
+                                    <p>Divex</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="m5power spacing grow">
+                                    <a href="http://www.m5power.co/" target="_blank"><img class="app-img responsive-img"
+                                            src="assets/images/m5power-screen.png" alt="m5 app"></a>
+                                    <p>M5Power</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+
+                <a id='about-btn' onclick="toggle_visibility('about')" class="waves-effect waves-light btn-small black grow toggle about"><i
+                        class="material-icons left">person</i>About</a>
+
+
+                <a id='skills-btn' onclick="toggle_visibility('skills')"  class="waves-effect waves-light btn-small black grow toggle skills"><i
+                        class="material-icons left">code</i>Skills</a>
+
+                <a id='projetcs-btn' onclick="toggle_visibility('projects')"  class="waves-effect waves-light btn-small black grow toggle projects"><i
+                            class="material-icons left">computer</i>Projects</a>
+
+
+                <a href="http://alexvirdeeblog.com/" class="waves-effect waves-light btn-small black grow" target="_blank"><i
+                        class="material-icons left">create</i>Blog</a>
+
+                <a href="assets/resume/alexvirdee-js-developer-ironv4.pdf" target="_blank" class="waves-effect waves-light btn-small black grow"><i
+                    class="material-icons left">folder</i>Resume</a>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer black z-depth-4">
+        <div class="footer-copyright">
+            <div class="container">
+                <a href="#" style="text-decoration:none;color:#fff;" href="#"><span class="left">&copy; <span
+                            id="currentYear"></span> Alex Virdee</span></a>
+                <div class="right footer-icons">
+                    <a href="https://github.com/alexvirdee" target="_blank" class="grey-text text-lighten-4"><i
+                            class="fab fa-github"></i></a>
+                    <a href="http://alexvirdeeblog.com/" target="_blank" class="grey-text text-lighten-4 right"><i
+                            class="fas fa-blog"></i></a>
+                    <a href="https://stackoverflow.com/users/7444319/alex-virdee" target="_blank"
+                        class="grey-text text-lighten-4 right"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="https://twitter.com/alex_virdee" target="_blank" class="grey-text text-lighten-4 right"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/portfolio.js"></script>
+</body>
+
+</html>
