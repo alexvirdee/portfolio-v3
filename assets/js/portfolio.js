@@ -6,6 +6,7 @@
 
 let clicked = 1;
 
+
 function toggle_visibility(id, isOdd) {
    let e = document.getElementById(id);
    document.getElementById("about").style.display = "none";
@@ -17,3 +18,4 @@ function toggle_visibility(id, isOdd) {
       e.style.display = 'none';
    } 
 }
+

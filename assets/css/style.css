@@ -59,7 +59,7 @@ nav {
 }
 
 #about, #skills, #projects {	
-	animation: 3s fadeIn;
+	animation: 1.2s fadeIn;
 	animation-fill-mode: forwards;
 }
 
@@ -72,6 +72,7 @@ nav {
 	  opacity: 1;
 	}
   }
+
 
 
 .links a {
