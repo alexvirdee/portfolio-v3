@@ -39,6 +39,7 @@
             <img id="portfolio-img" src="assets/images/20190406_185530.jpg" alt="portfolio image">
             <h2>Alex Virdee</h2>
             <hr>
+            <div id="display-area"></div>
             <div class="container">
                 <div id="about" class="div-info">
                     <div class="row">
@@ -100,14 +101,14 @@
             </div>
             <div class="links">
 
-                <a id='about-btn' onclick="toggle_visibility('about')" class="waves-effect waves-light btn-small black grow toggle about"><i
+                <a id='about-btn' onclick="javascript:toggle_visibility('about', clicked++%2==1)" class="waves-effect waves-light btn-small black grow toggle about"><i
                         class="material-icons left">person</i>About</a>
 
 
-                <a id='skills-btn' onclick="toggle_visibility('skills')"  class="waves-effect waves-light btn-small black grow toggle skills"><i
+                <a id='skills-btn' onclick="javascript:toggle_visibility('skills', clicked++%2==1)"  class="waves-effect waves-light btn-small black grow toggle skills"><i
                         class="material-icons left">code</i>Skills</a>
 
-                <a id='projetcs-btn' onclick="toggle_visibility('projects')"  class="waves-effect waves-light btn-small black grow toggle projects"><i
+                <a id='projetcs-btn' onclick="javascript:toggle_visibility('projects', clicked++%2==1)"  class="waves-effect waves-light btn-small black grow toggle projects"><i
                             class="material-icons left">computer</i>Projects</a>
 
 
@@ -138,6 +139,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/portfolio.js"></script>
 </body>
