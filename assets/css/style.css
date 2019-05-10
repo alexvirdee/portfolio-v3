@@ -19,7 +19,7 @@ body {
 	display: flex;
     min-height: 100vh;
 	flex-direction: column;
-	animation: color-change 4s;
+	animation: color-change 3s;
 }
 
 @keyframes color-change {
@@ -57,6 +57,21 @@ nav {
     font-weight: bold;
     color: #0d47a1;
 }
+
+#about, #skills, #projects {	
+	animation: 3s fadeIn;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  visibility: visible;
+	  opacity: 1;
+	}
+  }
 
 
 .links a {
