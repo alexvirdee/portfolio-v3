@@ -171,7 +171,9 @@ main {
 	
 	html {
 		background:url(../images/komori.jpg);
-		background-size: cover;
+		background-attachment: fixed;
+    	background-size: auto 100%;
+    	background-position: center;
 	}
 
  	body {

@@ -28,9 +28,9 @@ function hideNonVisibleSections() {
       sectionId = sections[i];
       div = document.getElementById(sectionId);
       if (sectionDivId === sectionId) {
-         div.style.display = "block";
+         div.style.display = 'block';
       } else {
-         div.style.display = "none";
+         div.style.display = 'none';
       }
    }
 }
