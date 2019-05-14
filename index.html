@@ -27,6 +27,7 @@
         ga('create', 'UA-97968706-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <!-- Thanks for checking out my portfolio site! -->
 </head>
 
 <body>
@@ -36,19 +37,31 @@
     </nav>
     <main id="main">
         <div class="main-area">
-            <img id="portfolio-img" src="assets/images/20190406_185530.jpg" alt="portfolio image">
-            <h2>Alex Virdee</h2>
-            <hr>
+            <div id="init">
+                    <img id="portfolio-img" src="assets/images/20190406_185530.jpg" alt="portfolio image">
+                    <h1>Alex Virdee</h1>
+                    <hr>
+            </div>
             <div id="display-area"></div>
             <div class="container">
                 <div id="about" class="div-info">
                     <div class="row">
-                        <h4>Web Application Developer</h4>
-                            <p>I develop web apps with front-end technologies primarily using the JavaScript
-                                language. Always trying to increase my programming abilities to be the best that I can. I have a few years working in the industry creating production code. Although I am not currently looking for a new role, I am available for freelance work if you need a web application/site built you may reach me via email <a href="mailto:alex@virdee.com">alex@virdee</a>. When i'm not busy working on the computer i'm either catching up on reading or learning a new riff on the guitar. 🎸</p>
+                        <h1>About</h1>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12">
+                                        <h4 id="current-job-title"></h4>
+                                        <p>I develop web apps with front-end technologies primarily using the JavaScript
+                                            language. Always trying to increase my programming abilities to be the best that I can. I have a few years working in the industry creating production code. Although I am not currently looking for a new role, I am available for freelance work if you need a web application/site built you may reach me via email <a href="mailto:alex@virdee.com">alex@virdee</a>. When i'm not busy working on the computer i'm either catching up on reading or learning a new riff on the guitar. 🎸</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="skills" class="div-info">
+                    <h1>Skills</h1>
+                    <hr>
                     <h6>Some of the technologies I use: </h6>
                     <div class="row">
                         <div class="col s12 technologies">
@@ -67,21 +80,23 @@
                     <!-- <p>HTML5, CSS3, JAVASCRIPT, EMBER, REACT, NODEJS, MONGODB</p> -->
                 </div>
                 <div id="projects" class="div-info">
+                    <h1>Projects</h1>
+                    <hr>
                     <div class="container">
                         <div class="row">
                             <div class="col s6">
-                                <div class="paper-droid">
+                                <div class="paper-droid grow">
                                     <a href="https://alexvirdee.github.io/paper-droid/" target="_blank"><img
-                                            class="app-img grow responsive-img" src="assets/images/paper-droid.png"
+                                            class="app-img responsive-img" src="assets/images/paper-droid.png"
                                             alt="paper droid"></a>
                                     <p>Paper Droid</p>
                                 </div>
                             </div>
 
                             <div class="col s6">
-                                <div class="divex">
+                                <div class="divex grow">
                                     <a href="http://divex.herokuapp.com/" target="_blank"> <img
-                                            class="app-img grow responsive-img" src="assets/images/divex.gif"
+                                            class="app-img responsive-img" src="assets/images/divex.gif"
                                             alt="divex app"></a>
                                     <p>Divex</p>
                                 </div>
@@ -101,14 +116,14 @@
             </div>
             <div class="links">
 
-                <a id='about-btn' onclick="javascript:toggle_visibility('about', clicked++%2==1)" class="waves-effect waves-light btn-small black grow toggle about"><i
+                <a id='about-btn' onclick="sectionVisibility('about')" class="waves-effect waves-light btn-small black grow toggle about"><i
                         class="material-icons left">person</i>About</a>
 
 
-                <a id='skills-btn' onclick="javascript:toggle_visibility('skills', clicked++%2==1)"  class="waves-effect waves-light btn-small black grow toggle skills"><i
+                <a id='skills-btn' onclick="sectionVisibility('skills') "  class="waves-effect waves-light btn-small black grow toggle skills"><i
                         class="material-icons left">code</i>Skills</a>
 
-                <a id='projetcs-btn' onclick="javascript:toggle_visibility('projects', clicked++%2==1)"  class="waves-effect waves-light btn-small black grow toggle projects"><i
+                <a id='projetcs-btn' onclick="sectionVisibility('projects')"  class="waves-effect waves-light btn-small black grow toggle projects"><i
                             class="material-icons left">computer</i>Projects</a>
 
 
@@ -139,7 +154,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/portfolio.js"></script>
 </body>

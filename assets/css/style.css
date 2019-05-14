@@ -36,15 +36,16 @@ body {
 	width: 190px;
 	height: 200px;
 	border-radius: 50%;
-}
-
-hr {
-	width: 100px;
-	margin-bottom: 18px;
+	margin-top: 5px;
 }
 
 nav {
-	height: 40px;
+	height: 45px;
+}
+
+hr {
+	width: 125px;
+	margin-bottom: 18px;
 }
 
 .grow { transition: all .4s ease-in-out;}
@@ -55,11 +56,11 @@ nav {
 
 .grow:hover {
     font-weight: bold;
-    color: #0d47a1;
+    color: #04E9FC;
 }
 
-#about, #skills, #projects {	
-	animation: 1.2s fadeIn;
+#about, #skills, #projects, #init {	
+	animation: 1.6s fadeIn;
 	animation-fill-mode: forwards;
 }
 
@@ -162,7 +163,7 @@ main {
 
 
 .div-info {
-  display: none;
+	display: none;
 }
 
 
@@ -181,5 +182,4 @@ main {
 	 .links a {
 		 margin-top: 10px;
 	 }
-
  }
