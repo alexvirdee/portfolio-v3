@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	color: #fff;
+	/* color: #fff;
 	background-image: url(../images/komori.jpg);
 	background-repeat: no-repeat; 
     background-position: center;
@@ -13,39 +13,45 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    height:100%;
-    width:100%; 
+    background-size: cover; */
+    /* height:100%;
+	width:100%;  */
 	display: flex;
-    min-height: 100vh;
+    min-height: 100%;
 	flex-direction: column;
-	animation: color-change 3s;
+	animation: color-change 1.8s;
 }
 
 @keyframes color-change {
 	0% {
-	  background: #fff;
-	}
-	100% {
 	  background: #000;
 	}
+	100% {
+	  background: #fff;
+	}
+  }
+
+  #display-area {
+	  padding-bottom: 5px;
   }
 
 
 #portfolio-img {
-	width: 190px;
-	height: 200px;
+	width: 200px;
+	height: 205px;
 	border-radius: 50%;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
-nav {
-	height: 45px;
+#portfolio-img:hover {
+	border: 1.4px solid #04E9FC;
+	cursor: pointer;
 }
+
 
 hr {
-	width: 125px;
-	margin-bottom: 18px;
+	width: 225px;
+	margin-bottom: 20px;
 }
 
 .grow { transition: all .4s ease-in-out;}
@@ -59,9 +65,19 @@ hr {
     color: #04E9FC;
 }
 
-#about, #skills, #projects, #init {	
-	animation: 1.6s fadeIn;
+#about, #skills, #projects, #init, #photography {	
+	animation: 1.8s fadeIn;
 	animation-fill-mode: forwards;
+}
+
+.nikon-img img {
+	width: 165px;
+	height: 185px;
+	margin-top: 15px;
+}
+
+.nikon-img img:hover {
+	border: 1px solid #04E9FC;
 }
 
 @keyframes fadeIn {
@@ -72,6 +88,10 @@ hr {
 	  visibility: visible;
 	  opacity: 1;
 	}
+  }
+
+  .links {
+	  margin-top: 35px;
   }
   
   .links a::before {
@@ -114,9 +134,9 @@ hr {
 }
 
 main {
+		padding-top: 25px;
 		flex: 1 0 auto;
-		overflow: auto;
-		padding-bottom: 100px;
+		padding-bottom: 50px;
 }
 
 .main-area {
@@ -137,6 +157,7 @@ main {
 #projects {
 	margin-top: 12px;
 }
+
 
 .footer {
     left: 0;
@@ -160,28 +181,66 @@ main {
 	margin-right: 15px;
 }
 
-
-
 .div-info {
 	display: none;
+	overflow-y: scroll;
+	color: #000;
+	height: 350px;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.photography-desc {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
+
+.modal {
+	margin-top: 25px;
+}
+
+.modal-trigger {
+	color: #000;
+}
+
+.modal img {
+	width: 325px;
+	height: 225px;
 }
 
 
  @media only screen and (max-width: 600px) {
 	
-	html {
+	/* html {
 		background:url(../images/komori.jpg);
 		background-attachment: fixed;
     	background-size: auto 100%;
     	background-position: center;
-	}
+	} */
 
  	body {
- 		height: 100vh;
+ 		height: 100%;
  		font-size: 18px;
 	 }
 	 
 	 .links a {
 		 margin-top: 10px;
+	 }
+
+	 .nikon-img img {
+		 width: 100px;
+		 height: 90px;
 	 }
  }
