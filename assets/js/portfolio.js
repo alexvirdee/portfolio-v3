@@ -35,8 +35,6 @@ function hideNonVisibleSections() {
    }
 }
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
    let onModalClose = function () {
       showLinkBtns();
@@ -69,7 +67,6 @@ function hideLinkBtns() {
       let links = document.getElementsByClassName('links');
       for (let i = 0; i < links.length; i++) {
          if (modals[i].style.display != 'block') {
-            console.log('links should be gone what the fuck!');
             links[i].style.display = 'none';
          }
       }

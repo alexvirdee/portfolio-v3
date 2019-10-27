@@ -243,4 +243,14 @@ main {
 		 width: 100px;
 		 height: 90px;
 	 }
+
+	 .modal {
+		width: 70%;
+		height: 50%;
+	 }
+
+	 .modal img {
+		 width: 200px;
+		 height: 150px;
+	 }
  }
