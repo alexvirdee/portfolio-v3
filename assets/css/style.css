@@ -6,17 +6,6 @@ body {
 }
 
 body {
-  /* color: #fff;
-	background-image: url(../images/komori.jpg);
-	background-repeat: no-repeat; 
-    background-position: center;
-    background-attachment: fixed;       
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-  /* height:100%;
-	width:100%;  */
   display: flex;
   min-height: 100%;
   flex-direction: column;
@@ -227,14 +216,13 @@ main {
   height: 225px;
 }
 
-@media only screen and (max-width: 600px) {
-  /* html {
-		background:url(../images/komori.jpg);
-		background-attachment: fixed;
-    	background-size: auto 100%;
-    	background-position: center;
-	} */
+@media only screen and (max-width: 768px) {
+  .links a {
+    margin-top: 15px;
+  }
+}
 
+@media only screen and (max-width: 600px) {
   body {
     height: 100%;
     font-size: 18px;
@@ -242,6 +230,10 @@ main {
 
   main {
     padding-top: 0;
+  }
+
+  .card {
+    margin: 20px 20px;
   }
 
   .links {
@@ -254,17 +246,26 @@ main {
   }
 
   .nikon-img img {
-    width: 100px;
-    height: 90px;
+    width: 75px;
+    height: 85px;
+    padding-right: 15px;
   }
 
   .modal {
-    width: 70%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
   }
 
-  .modal img {
-    width: 200px;
-    height: 150px;
+  .footer,
+  .footer i {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
