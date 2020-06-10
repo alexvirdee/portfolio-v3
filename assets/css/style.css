@@ -28,6 +28,15 @@ body {
   }
 }
 
+@keyframes title-color {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #04e9fc;
+  }
+}
+
 nav {
   border-bottom: 2px solid #04e9fc;
 }
@@ -51,6 +60,16 @@ nav {
 
 .title {
   color: #fff;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.title a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.title a:hover {
+  animation: title-color 1s;
 }
 
 hr {
