@@ -10,14 +10,21 @@ body {
   min-height: 100%;
   flex-direction: column;
   animation: color-change 1.8s;
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
 }
+
 
 @keyframes color-change {
   0% {
-    background: #000;
+    background: #fff;
   }
   100% {
-    background: #fff;
+    background: #000;
   }
 }
 
@@ -27,18 +34,23 @@ nav {
 
 #display-area {
   padding-bottom: 5px;
+  height: 100%;
 }
 
 #portfolio-img {
-  width: 200px;
+  width: 215px;
   height: 205px;
   border-radius: 50%;
   margin-top: 10px;
 }
 
 #portfolio-img:hover {
-  border: 1.4px solid #04e9fc;
+  border: 2.1px solid #04e9fc;
   cursor: pointer;
+}
+
+.title {
+  color: #fff;
 }
 
 hr {
