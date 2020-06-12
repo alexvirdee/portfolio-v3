@@ -255,6 +255,8 @@ main {
   height: 225px;
 }
 
+
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
   .links a {
     margin-top: 15px;
@@ -290,14 +292,14 @@ main {
     padding-right: 15px;
   }
 
-  .modal {
+  /* .modal {
     width: 80%;
     height: 80%;
-  }
+  } */
 
   .footer,
   .footer i {
-    font-size: 14px;
+    font-size: 1.15em;
   }
 }
 
