@@ -77,7 +77,8 @@ nav {
 }
 
 .title a:hover {
-  animation: title-color 1s;
+  animation: title-color .2s;
+  animation-iteration-count: infinite;
 }
 
 hr {
