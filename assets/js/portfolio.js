@@ -4,7 +4,7 @@
   document.getElementById('currentYear').innerHTML = year;
 })();
 
-let sections = ['about', 'skills', 'projects', 'photography'];
+let sections = ['about', 'skills', 'projects'];
 let sectionDivId = null;
 let currentPos = (document.getElementById('current-job-title').innerHTML =
   'Web Application Developer');
