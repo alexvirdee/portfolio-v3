@@ -31,9 +31,7 @@ function hideNonVisibleSections() {
       let links = document.querySelectorAll('.links-btn');
 
       cardsArr = Array.from(cards);
-      // cardsArr.forEach(card => {
-      //   card.addEventListener('mousemove', bgStyle);
-      // });
+
 
       links.forEach(link => {
         link.addEventListener('mousedown', bgWhite);
@@ -42,10 +40,6 @@ function hideNonVisibleSections() {
       function bgWhite(e) {
         document.body.style.backgroundColor = '#fff';
       }
-
-      // function bgStyle(e) {
-      //   document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
-      // }
 
       div.style.display = 'block';
     } else {
@@ -89,5 +83,6 @@ function hideLinkBtns() {
     }
   }
 }
+
 
 triggeredModal();
