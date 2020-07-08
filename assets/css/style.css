@@ -168,6 +168,10 @@ hr {
   color: #04e9fc;
 }
 
+.btn-small i {
+  font-size: 2rem;
+}
+
 main {
   padding-top: 2.5rem;
   flex: 1 0 auto;
