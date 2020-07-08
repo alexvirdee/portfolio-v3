@@ -239,14 +239,14 @@ main {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
   .links a {
-    margin-top: 15px;
+    margin-top: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   body {
     height: 100%;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   main {
@@ -254,7 +254,7 @@ main {
   }
 
   .card {
-    margin: 20px 20px;
+    margin: 2rem 2rem;
   }
 
   .links {
@@ -263,7 +263,7 @@ main {
   }
 
   .links a {
-    margin-top: 8px;
+    margin-top: .8rem;
   }
 
   .footer,
