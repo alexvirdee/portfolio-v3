@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -84,8 +85,8 @@ nav {
 }
 
 .title a:hover {
-  animation: title-color .2s;
-  animation-iteration-count: infinite;
+  animation: title-color 1s;
+  animation-fill-mode: forwards;
 }
 
 hr {
@@ -105,6 +106,16 @@ hr {
 .grow:hover {
   font-weight: bold;
   color: #04e9fc;
+}
+
+#skills, #about, #projects {
+  background-color: #000;
+  color: #fff;
+}
+
+.card {
+  border: 2px solid #04e9fc;
+  border-radius: 1rem;
 }
 
 #about,
@@ -189,12 +200,28 @@ main {
   margin: .6rem;
 }
 
+.skills-logo {
+  width: 22rem;
+  height: 11.5rem;
+  margin-bottom: 1rem
+}
+
 .technologies i:hover {
   color: #04e9fc;
 }
 
 #projects {
   margin-top: 1.2rem;
+}
+
+.modal {
+  color: #000;
+  padding: 10px;
+}
+
+
+.modal-trigger {
+  cursor: pointer;
 }
 
 .footer {
