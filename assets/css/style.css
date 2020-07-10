@@ -129,6 +129,9 @@ body {
     font-weight: bold;
     color: #04e9fc; }
 
+.fixed-action-btn {
+  bottom: 6.5rem; }
+
 .about-logo img {
   width: 6rem;
   height: 6rem;

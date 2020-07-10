@@ -1,10 +1,21 @@
+document.addEventListener('DOMContentLoaded', () => {
+  let onModalClose = () => {
+    showLinkBtns();
+  };
+  let elems = document.querySelectorAll('.modal');
+  let instances = M.Modal.init(elems, { onCloseEnd: onModalClose });
+
+  let actionBtns = document.querySelectorAll('.fixed-action-btn');
+  let actions = M.FloatingActionButton.init(actionBtns);
+});
+
 (function dateFunc() {
   let today = new Date();
   let year = today.getFullYear();
   document.getElementById('currentYear').innerHTML = year;
 })();
 
-let sections = ['about', 'skills', 'projects'];
+let sections = ['about', 'skills', 'projects', 'contact'];
 let sectionDivId = null;
 let currentPos = (document.getElementById('current-job-title').innerHTML =
   'Web Application Developer');
@@ -48,14 +59,6 @@ function hideNonVisibleSections() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  let onModalClose = function() {
-    showLinkBtns();
-  };
-  let elems = document.querySelectorAll('.modal');
-  let instances = M.Modal.init(elems, { onCloseEnd: onModalClose });
-});
-
 function showLinkBtns() {
   let links = document.getElementsByClassName('links');
   for (let i = 0; i < links.length; i++) {
@@ -86,3 +89,25 @@ function hideLinkBtns() {
 
 
 triggeredModal();
+
+// Contact form 
+(function submitForm() {
+  const form = document.getElementById('contact-form');
+  const formResponse = document.getElementById('js-form-response');
+
+  form.onsubmit = e => {
+    e.preventDefault();
+
+    console.log('submitted')
+
+    // Prepare data to send
+    const data = {};
+
+    const formElements = Array.from(form);
+
+    formElements.map(input => (data[input.name] = input.value));
+
+    // Log what lambda function will recieve
+    console.log(JSON.stringify(data));
+  };
+})();
