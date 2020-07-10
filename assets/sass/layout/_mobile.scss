@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px) {
+    .links a {
+      margin-top: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      height: 100%;
+      font-size: 1.8rem;
+    }
+  
+    main {
+      padding-top: 0;
+    }
+  
+    .card {
+      margin: 2rem 2rem;
+    }
+  
+    .links {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .links a {
+      margin-top: 0.8rem;
+    }
+  
+    .footer,
+    .footer i {
+      font-size: 1.15em;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

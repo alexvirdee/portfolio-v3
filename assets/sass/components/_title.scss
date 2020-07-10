@@ -1,0 +1,15 @@
+.title {
+    color: $color-white;
+    font-size: 6rem;
+  
+    & a {
+      text-decoration: none;
+      color: $color-white;
+    }
+    
+    & a:hover {
+      animation: title-color 1s;
+      animation-fill-mode: forwards;
+    }
+    
+  }

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  animation: color-change 1.8s;
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+hr {
+  width: 22.5rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+#display-area {
+  padding-bottom: 0.5rem;
+  height: 100%;
+}
+
+.main {
+  padding-top: 2.5rem;
+  flex: 1 0 auto;
+  padding-bottom: 4.5rem;
+
+  &__area {
+    text-align: center;
+    margin-top: 0.42rem;
+    font-size: 1.6rem;
+  }
+}
+
+#skills,
+#about,
+#projects {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.card {
+  border: 2px solid $color-primary;
+  border-radius: 1rem;
+}
+
+#about,
+#skills,
+#projects,
+#init,
+#photography {
+  animation: 1.8s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.btn-small i {
+  font-size: 2rem;
+}
+
+.technologies i {
+  font-size: 7.2rem;
+  margin: 0.6rem;
+}
+
+.skills-logo {
+  width: 22rem;
+  height: 11.5rem;
+  margin-bottom: 1rem;
+}
+
+.technologies i:hover {
+  color: $color-primary;
+}
+
+#projects {
+  margin-top: 1.2rem;
+}
+
+.modal {
+  color: $color-black;
+  padding: 10px;
+}
+
+.modal-trigger {
+  cursor: pointer;
+}
+
+.div-info {
+  display: none;
+  overflow-y: scroll;
+  color: $color-black;
+  height: 37.5rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.7rem;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
