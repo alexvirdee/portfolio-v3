@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('currentYear').innerHTML = year;
 })();
 
-let sections = ['about', 'skills', 'projects', 'contact'];
+let sections = ['about', 'skills', 'projects', 'contact', 'location'];
 let sectionDivId = null;
 let currentPos = (document.getElementById('current-job-title').innerHTML =
   'Web Application Developer');
@@ -120,7 +120,8 @@ triggeredModal();
       if (response.target.status === 200) {
         // Form submission was successful
         form.reset();
-        formResponse.innerHTML = 'Thanks for sending a message over, I\'ll be in touch shortly 😎.';
+        // M.toast({html: 'I am a toast!'})
+        formResponse = M.toast({html: 'Thanks for sending a message over, I\'ll be in touch shortly 😎.' });
       } else {
         // Failed
         formResponse.innerHTML = 'Error sending your message. Try again.';
@@ -129,3 +130,14 @@ triggeredModal();
     }
   };
 })();
+
+function initMap() {
+  let miami = { lat: 25.7617, lng: -80.1918 };
+
+  let map = new google.maps.Map(
+    document.getElementById('map'), { zoom: 14, center: miami, gestureHandling: 'cooperative' }
+  );
+
+  // Marker position at Miami
+  let marker = new google.maps.Marker({ position: miami, map: map });
+}
