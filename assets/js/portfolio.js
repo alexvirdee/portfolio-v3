@@ -119,7 +119,7 @@ triggeredModal();
     xhr.onloadend = response => {
       if (response.target.status === 200) {
         // Form submission was successful
-        form.requestFullscreen();
+        form.reset();
         formResponse.innerHTML = 'Thanks for sending a message over, I\'ll be in touch shortly 😎.';
       } else {
         // Failed

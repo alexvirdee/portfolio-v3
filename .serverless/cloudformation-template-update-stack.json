@@ -201,7 +201,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/contact-mailer-dev/dev/1594484330867-2020-07-11T16:18:50.867Z/contact-mailer-dev.zip"
+          "S3Key": "serverless/contact-mailer-dev/dev/1594486084204-2020-07-11T16:48:04.204Z/contact-mailer-dev.zip"
         },
         "FunctionName": "contact-mailer-dev-dev-staticSiteMailer",
         "Handler": "s_staticSiteMailer.handler",
@@ -219,14 +219,14 @@
         "StaticSiteMailerLogGroup"
       ]
     },
-    "StaticSiteMailerLambdaVersion4gQxmPV5RXW7ddcvNzXC30VnZQkbb8jD3ufI0uJJ4A": {
+    "StaticSiteMailerLambdaVersionNSQpV8Xg0jLmdraSdSYh7LAxp8KmWVezpjkVT0Pv738": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "StaticSiteMailerLambdaFunction"
         },
-        "CodeSha256": "lJ4Cp6AneIGhw+mTjFJ26Hoq2JGhT2sd2o6v4+VJwBc="
+        "CodeSha256": "pjAyAmQ7ocJm42W12EGaE12ddIZ9wBPAkZa5nY8rkr8="
       }
     },
     "ApiGatewayRestApi": {
@@ -344,7 +344,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1594484296432": {
+    "ApiGatewayDeployment1594486050595": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -503,7 +503,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/contact-mailer-dev/dev/1594484330867-2020-07-11T16:18:50.867Z/custom-resources.zip"
+          "S3Key": "serverless/contact-mailer-dev/dev/1594486084204-2020-07-11T16:48:04.204Z/custom-resources.zip"
         },
         "FunctionName": "contact-mailer-dev-dev-custom-resource-apigw-cw-role",
         "Handler": "apiGatewayCloudWatchRole/handler.handler",
@@ -559,7 +559,7 @@
     "StaticSiteMailerLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "StaticSiteMailerLambdaVersion4gQxmPV5RXW7ddcvNzXC30VnZQkbb8jD3ufI0uJJ4A"
+        "Ref": "StaticSiteMailerLambdaVersionNSQpV8Xg0jLmdraSdSYh7LAxp8KmWVezpjkVT0Pv738"
       }
     },
     "ServiceEndpoint": {
