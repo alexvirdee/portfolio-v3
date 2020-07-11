@@ -1,6 +1,6 @@
 org: alexvirdee08
 app: portfolio-contact
-service: contact-mailer
+service: contact-mailer-dev
 
 functions:
   staticSiteMailer:
@@ -8,12 +8,12 @@ functions:
     events:
       - http:
           method: post
-          path: contact-mailer
+          path: contact-mailer-dev
           cors: true
 
 provider:
   name: aws
-  runtime: nodejs12.0
+  runtime: nodejs12.x
   iamRoleStatements:
     - Effect: "Allow"
       Action:

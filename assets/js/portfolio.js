@@ -98,16 +98,34 @@ triggeredModal();
   form.onsubmit = e => {
     e.preventDefault();
 
-    console.log('submitted')
-
     // Prepare data to send
     const data = {};
-
     const formElements = Array.from(form);
-
     formElements.map(input => (data[input.name] = input.value));
 
     // Log what lambda function will recieve
     console.log(JSON.stringify(data));
+
+    // Construct an http Request
+    let xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action, true);
+    xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+
+    // send the collected data as JSON
+    xhr.send(JSON.stringify(data));
+
+    // Callback
+    xhr.onloadend = response => {
+      if (response.target.status === 200) {
+        // Form submission was successful
+        form.requestFullscreen();
+        formResponse.innerHTML = 'Thanks for sending a message over, I\'ll be in touch shortly 😎.';
+      } else {
+        // Failed
+        formResponse.innerHTML = 'Error sending your message. Try again.';
+        console.error(JSON.parse(response.target.response.message));
+      }
+    }
   };
 })();
