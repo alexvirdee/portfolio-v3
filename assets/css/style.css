@@ -42,6 +42,10 @@ hr {
   margin: 0 auto;
   margin-bottom: 2.5rem; }
 
+#site-title {
+  opacity: 0;
+  transition: opacity 1s linear; }
+
 #skills,
 #about,
 #projects {
@@ -190,7 +194,7 @@ body {
     color: #04e9fc; }
 
 .main {
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   flex: 1 0 auto;
   padding-bottom: 4.5rem; }
   .main__area {
@@ -203,6 +207,8 @@ body {
 
 nav {
   border-bottom: 2px solid #04e9fc; }
+  nav .brand-logo {
+    margin-left: 2rem; }
 
 .footer {
   left: 0;

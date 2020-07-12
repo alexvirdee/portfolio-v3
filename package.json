@@ -2,19 +2,21 @@
   "name": "portfolio-v3",
   "version": "1.0.0",
   "description": "My portfolio website",
-  "main": "index.js",
+  "main": "assets/js/portfolio.js",
   "scripts": {
     "start": "node-sass assets/sass/main.scss assets/css/style.css -w",
     "clean": "rm -rf node_modules",
     "restart": "rm -rf node_modules && yarn install && yarn run start",
     "webpack:dev": "webpack --mode development",
-    "webpack:start": "webpack-dev-server --mode development node-sass assets/sass/main.scss assets/css/style.css -w",
+    "webpack:start": "webpack-dev-server --mode development",
     "build": "webpack ./assets/js/portfolio.js ./dist/bundle.js"
   },
   "author": "Alex Virdee",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^3.6.0",
     "node-sass": "^4.14.1",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   },
@@ -22,6 +24,7 @@
     "aws-sdk": "^2.713.0",
     "dotenv": "^8.2.0",
     "html-webpack-plugin": "^4.3.0",
+    "sass-loader": "^9.0.2",
     "serverless": "^1.74.1",
     "webpack-dev-server": "^3.11.0"
   }

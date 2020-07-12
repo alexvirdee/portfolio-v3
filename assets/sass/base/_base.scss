@@ -27,6 +27,11 @@ hr {
   margin-bottom: 2.5rem;
 }
 
+#site-title {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
 
 #skills,
 #about,
