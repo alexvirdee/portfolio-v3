@@ -1,0 +1,16 @@
+.main {
+    padding-top: 2.5rem;
+    flex: 1 0 auto;
+    padding-bottom: 4.5rem;
+  
+    &__area {
+      text-align: center;
+      margin-top: 0.42rem;
+      font-size: 1.6rem;
+  
+      &--display {
+        padding-bottom: 0.5rem;
+        height: 100%;
+      }
+    }
+  }

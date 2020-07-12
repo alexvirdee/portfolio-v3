@@ -27,22 +27,6 @@ hr {
   margin-bottom: 2.5rem;
 }
 
-#display-area {
-  padding-bottom: 0.5rem;
-  height: 100%;
-}
-
-.main {
-  padding-top: 2.5rem;
-  flex: 1 0 auto;
-  padding-bottom: 4.5rem;
-
-  &__area {
-    text-align: center;
-    margin-top: 0.42rem;
-    font-size: 1.6rem;
-  }
-}
 
 #skills,
 #about,
@@ -60,7 +44,8 @@ hr {
 #skills,
 #projects,
 #init,
-#photography {
+#contact,
+#location {
   animation: 1.8s fadeIn;
   animation-fill-mode: forwards;
 }

@@ -42,19 +42,6 @@ hr {
   margin: 0 auto;
   margin-bottom: 2.5rem; }
 
-#display-area {
-  padding-bottom: 0.5rem;
-  height: 100%; }
-
-.main {
-  padding-top: 2.5rem;
-  flex: 1 0 auto;
-  padding-bottom: 4.5rem; }
-  .main__area {
-    text-align: center;
-    margin-top: 0.42rem;
-    font-size: 1.6rem; }
-
 #skills,
 #about,
 #projects {
@@ -69,7 +56,8 @@ hr {
 #skills,
 #projects,
 #init,
-#photography {
+#contact,
+#location {
   animation: 1.8s fadeIn;
   animation-fill-mode: forwards; }
 
@@ -200,6 +188,18 @@ body {
     margin-right: 0.8rem; }
   .links a:hover {
     color: #04e9fc; }
+
+.main {
+  padding-top: 2.5rem;
+  flex: 1 0 auto;
+  padding-bottom: 4.5rem; }
+  .main__area {
+    text-align: center;
+    margin-top: 0.42rem;
+    font-size: 1.6rem; }
+    .main__area--display {
+      padding-bottom: 0.5rem;
+      height: 100%; }
 
 nav {
   border-bottom: 2px solid #04e9fc; }
