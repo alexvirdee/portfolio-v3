@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My portfolio website",
   "main": "assets/js/portfolio.js",
+  "homepage": "http://www.alexvirdee.com/",
   "scripts": {
     "start": "node-sass assets/sass/main.scss assets/css/style.css -w",
     "clean": "rm -rf node_modules",
