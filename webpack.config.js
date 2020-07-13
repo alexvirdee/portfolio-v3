@@ -1,3 +1,5 @@
+let dotenv = require('dotenv').config({path: __dirname + '/.env'});
+let webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
@@ -24,7 +26,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve("index.html")
+            template: path.resolve("index.html"),
+            apiUrl: `https://maps.googleapis.com/maps/api/js?key=${process.env.maps_key}&callback=initMap`,
+        }),
+        new webpack.DefinePlugin({
+            "process.env": dotenv.parsed
         })
     ]
 }
