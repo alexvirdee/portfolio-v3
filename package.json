@@ -9,7 +9,8 @@
     "restart": "rm -rf node_modules && yarn install && yarn run start",
     "webpack:dev": "webpack --mode development",
     "webpack:start": "webpack-dev-server --mode development",
-    "webpack:build": "webpack --mode production"
+    "webpack:build": "webpack --mode production",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Alex Virdee",
   "license": "ISC",
