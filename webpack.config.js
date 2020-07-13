@@ -9,10 +9,21 @@ module.exports = {
     entry: { index: path.resolve(__dirname, "assets/js", "portfolio.js") },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        publicPath: "/"
     },
     module: {
         rules: [
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'html-loader'
+                    },
+                    {
+                        loader: 'ejs-html-loader'
+                    }
+                ]
+            },
             {
                 test: /\.scss$/,
                 use: ["style-loader", "css-loader", "sass-loader"]

@@ -11,7 +11,7 @@
     "webpack:dev": "webpack --mode development",
     "webpack:start": "webpack-dev-server --mode development",
     "webpack:build": "webpack --mode production",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Alex Virdee",
   "license": "ISC",
@@ -31,6 +31,8 @@
   "dependencies": {
     "aws-sdk": "^2.713.0",
     "dotenv": "^8.2.0",
+    "ejs-html-loader": "^4.0.1",
+    "gh-pages": "^3.1.0",
     "serverless": "^1.74.1"
   }
 }
