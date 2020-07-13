@@ -9,23 +9,26 @@
     "restart": "rm -rf node_modules && yarn install && yarn run start",
     "webpack:dev": "webpack --mode development",
     "webpack:start": "webpack-dev-server --mode development",
-    "build": "webpack ./assets/js/portfolio.js ./dist/bundle.js"
+    "build": "webpack --mode production"
   },
   "author": "Alex Virdee",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "css-loader": "^3.6.0",
     "node-sass": "^4.14.1",
+    "html-webpack-plugin": "^4.3.0",
+    "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "babel-loader": "^8.1.0"
   },
   "dependencies": {
     "aws-sdk": "^2.713.0",
     "dotenv": "^8.2.0",
-    "html-webpack-plugin": "^4.3.0",
-    "sass-loader": "^9.0.2",
-    "serverless": "^1.74.1",
-    "webpack-dev-server": "^3.11.0"
+    "serverless": "^1.74.1"
   }
 }
