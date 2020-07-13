@@ -168,15 +168,18 @@ triggeredModal();
   };
 })();
 
-function initMap() {
-  let miami = { lat: 25.7617, lng: -80.1918 };
 
-  let map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: miami,
-    gestureHandling: 'cooperative',
-  });
-
-  // Marker position at Miami
-  let marker = new google.maps.Marker({ position: miami, map: map });
+window.initMap = function() {
+  function initMap() {
+    let miami = { lat: 25.7617, lng: -80.1918 };
+  
+    let map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: miami,
+      gestureHandling: 'cooperative',
+    });
+  
+    // Marker position at Miami
+    let marker = new google.maps.Marker({ position: miami, map: map });
+  }
 }
