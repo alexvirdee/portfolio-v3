@@ -11,7 +11,7 @@
     "webpack:dev": "webpack --mode development",
     "webpack:start": "webpack-dev-server --mode development",
     "webpack:build": "webpack --mode production",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages -d dist -b master"
   },
   "author": "Alex Virdee",
   "license": "ISC",
