@@ -11,7 +11,7 @@
     "webpack:dev": "webpack --mode development",
     "webpack:start": "webpack-dev-server --mode development",
     "webpack:build": "webpack --mode production",
-    "deploy": "gh-pages -d dist"
+    "deploy": "webpack --mode production && gh-pages -d dist"
   },
   "author": "Alex Virdee",
   "license": "ISC",
