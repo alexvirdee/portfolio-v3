@@ -123,6 +123,14 @@ input[type="text"] + label {
 .contact-icon {
   margin-right: 1.2rem; }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../fonts/OpenSans-Regular.ttf) format("ttf"); }
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(../../fonts/PermanentMarker-Regular.ttf); }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
