@@ -30,7 +30,7 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-  animation: color-change 1.8s;
+  animation: color-change 1.4s;
   background: url(../images/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

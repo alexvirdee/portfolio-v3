@@ -1,5 +1,5 @@
 function initMap() {
-  let miami = { lat: 25.7617, lng: -80.1918 };
+  let miami = { lat: 26.1224, lng: -80.1373 };
 
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
@@ -65,7 +65,7 @@ let sections = ['about', 'skills', 'projects', 'contact', 'location'];
 let sectionDivId = null;
 
 let currentPos = (document.getElementById('current-job-title').innerHTML =
-  'Web Application Developer');
+  'Jr. Software Developer');
 
 function sectionVisibility(sectionId) {
   let init = document.getElementById('init');
