@@ -1,14 +1,14 @@
 function initMap() {
-  let miami = { lat: 26.1224, lng: -80.1373 };
+  let ftLaud = { lat: 26.1224, lng: -80.1373 };
 
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
-    center: miami,
+    center: ftLaud,
     gestureHandling: 'cooperative',
   });
 
-  // Marker position at Miami
-  let marker = new google.maps.Marker({ position: miami, map: map });
+  // Marker position at Ft. Lauderdale
+  let marker = new google.maps.Marker({ position: ftLaud, map: map });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -65,7 +65,7 @@ let sections = ['about', 'skills', 'projects', 'contact', 'location'];
 let sectionDivId = null;
 
 let currentPos = (document.getElementById('current-job-title').innerHTML =
-  'Jr. Software Developer');
+  'Software Engineer II');
 
 function sectionVisibility(sectionId) {
   let init = document.getElementById('init');
@@ -187,3 +187,4 @@ triggeredModal();
     };
   };
 })();
+
