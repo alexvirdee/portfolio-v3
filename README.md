@@ -13,11 +13,13 @@ My personal portfolio website.
 
 ### Installation
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and devDependencies and start the server and webpack.
 
 ```sh
 $ cd portfolio-v3
 $ npm install 
 $ npm run start
+$ npm run webpack:start
 ```
 
+The site should be running on http://localhost:8080/
