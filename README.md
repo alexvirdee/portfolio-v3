@@ -26,3 +26,14 @@ $ npm run webpack:start
 ```
 
 The site should be running on http://localhost:8080/
+
+### Deployment 
+
+To deploy to Netlify (this has been moved over from github pages) follow commands below
+
+```
+$ git checkout prod
+$ git fetch
+$ git rebase origin/master
+$ git push 
+```
