@@ -16,9 +16,9 @@
   "author": "Alex Virdee",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
     "css-loader": "^3.6.0",
     "html-webpack-plugin": "^4.3.0",
     "node-sass": "^6.0.1",
