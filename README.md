@@ -11,6 +11,9 @@ My personal portfolio website.
   - Just static web technologies used... HTML, CSS/SASS, Vanilla JavaScript
 
 
+## Project uses yarn
+
+
 ### Installation
 
 Install the dependencies and devDependencies and start the server and webpack.
