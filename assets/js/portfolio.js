@@ -167,7 +167,7 @@ triggeredModal();
 
     xhr.onreadystatechange = () => {
       contactBtn.textContent = 'Send Message';
-    }
+    };
 
     // Callback
     xhr.onloadend = (response) => {
@@ -176,8 +176,7 @@ triggeredModal();
         form.reset();
         // M.toast({html: 'I am a toast!'})
         formResponse = M.toast({
-          html:
-            "Thanks for sending a message over, I'll be in touch shortly!",
+          html: "Thanks for sending a message over, I'll be in touch shortly!",
         });
       } else {
         // Failed
@@ -187,4 +186,3 @@ triggeredModal();
     };
   };
 })();
-
