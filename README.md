@@ -8,11 +8,9 @@ My personal portfolio website.
 
 # Technologies
 
-  - Just static web technologies used... HTML, CSS/SASS, Vanilla JavaScript
-
+- Just static web technologies used... HTML, CSS/SASS, Vanilla JavaScript
 
 ## Project uses yarn
-
 
 ### Installation
 
@@ -20,20 +18,19 @@ Install the dependencies and devDependencies and start the server and webpack.
 
 ```sh
 $ cd portfolio-v3
-$ yarn install 
+$ yarn install
 $ yarn run start
 $ yarn run webpack:start
 ```
 
 The site should be running on http://localhost:8080/
 
-### Deployment 
+### Deployment
 
-To deploy to Netlify (this has been moved over from github pages) follow commands below
+Currently just building the site from master branch at the root
 
 ```
-$ git checkout prod
+$ git checkout master
 $ git fetch
-$ git rebase origin/master
-$ git push 
+$ git push
 ```
