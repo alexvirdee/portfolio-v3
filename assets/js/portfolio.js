@@ -1,14 +1,14 @@
 function initMap() {
-  let ftLaud = { lat: 26.1224, lng: -80.1373 };
+  let tampa = { lat: 27.9506, lng: -82.4572 };
 
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
-    center: ftLaud,
+    center: tampa,
     gestureHandling: 'cooperative',
   });
 
   // Marker position at Ft. Lauderdale
-  let marker = new google.maps.Marker({ position: ftLaud, map: map });
+  let marker = new google.maps.Marker({ position: tampa, map: map });
 }
 
 function getJaxAge() {
