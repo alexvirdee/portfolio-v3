@@ -25,6 +25,12 @@ $ yarn run webpack:start
 
 The site should be running on http://localhost:8080/
 
+Also can run the server using http-server
+
+```
+npx http-server .
+```
+
 ### Deployment
 
 Currently just building the site from master branch at the root
