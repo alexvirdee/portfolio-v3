@@ -45,6 +45,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let actionBtns = document.querySelectorAll('.fixed-action-btn');
   let actions = M.FloatingActionButton.init(actionBtns);
+
+  // Employment status for navbar - creating for recruiters to check 
+  fetch('/assets/js/work-status.json')
+  .then(response => response.json())
+  .then(data => {
+    const employmentStatus = document.querySelector('.nav-employment-status');
+
+    if (data.openToWork) {
+      employmentStatus.classList.add('open-to-work');
+      employmentStatus.classList.remove('not-open-to-work');
+      employmentStatus.textContent = 'Currently Open to Work';
+    } else {
+      employmentStatus.classList.add('not-open-to-work');
+      employmentStatus.classList.remove('open-to-work');
+      employmentStatus.textContent = 'Not Open to Work'
+    }
+  })
 });
 
 (function dateFunc() {
@@ -86,8 +103,8 @@ function nextTitleWord() {
 animateTitleText();
 
 // Display sections
-let sections = ['about', 'skills', 'projects', 'contact', 'location'];
-let sectionDivId = null;
+let sections = ['init', 'about', 'skills', 'projects', 'contact', 'location'];
+let sectionDivId = 'init';
 
 let currentPos = (document.getElementById('current-job-title').innerHTML =
   'Software Engineer II');
@@ -95,7 +112,7 @@ let currentPos = (document.getElementById('current-job-title').innerHTML =
 function sectionVisibility(sectionId) {
   let init = document.getElementById('init');
   if (sectionDivId === sectionId) {
-    sectionDivId = null;
+    sectionDivId = 'init';
     init.style.display = 'block';
   } else {
     sectionDivId = sectionId;
