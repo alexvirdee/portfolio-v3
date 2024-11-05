@@ -34,9 +34,10 @@ function getJaxAge() {
   document.getElementById('jax-age').innerHTML = age;
 }
 
-getJaxAge();
 
 document.addEventListener('DOMContentLoaded', () => {
+  getJaxAge();
+
   let onModalClose = () => {
     showLinkBtns();
   };
