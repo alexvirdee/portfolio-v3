@@ -256,11 +256,13 @@ body {
   flex: 1 0 auto;
   padding-bottom: 4.5rem;
 }
+
 .main__area {
   text-align: center;
   margin-top: 0.42rem;
   font-size: 1.6rem;
 }
+
 .main__area--display {
   padding-bottom: 0.5rem;
   height: 100%;
@@ -269,8 +271,26 @@ body {
 nav {
   border-bottom: 2px solid #04e9fc;
 }
-nav .brand-logo {
-  margin-left: 2rem;
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 45px;
+  margin: 8px 12px;
+  cursor: pointer;
+}
+
+.nav-employment-status-badge {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  padding: 4px;
+  margin-right: 82px;
+  font-size: 16px;
 }
 
 .footer {

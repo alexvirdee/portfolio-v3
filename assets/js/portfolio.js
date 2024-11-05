@@ -86,8 +86,8 @@ function nextTitleWord() {
 animateTitleText();
 
 // Display sections
-let sections = ['about', 'skills', 'projects', 'contact', 'location'];
-let sectionDivId = null;
+let sections = ['init', 'about', 'skills', 'projects', 'contact', 'location'];
+let sectionDivId = 'init';
 
 let currentPos = (document.getElementById('current-job-title').innerHTML =
   'Software Engineer II');
@@ -95,7 +95,7 @@ let currentPos = (document.getElementById('current-job-title').innerHTML =
 function sectionVisibility(sectionId) {
   let init = document.getElementById('init');
   if (sectionDivId === sectionId) {
-    sectionDivId = null;
+    sectionDivId = 'init';
     init.style.display = 'block';
   } else {
     sectionDivId = sectionId;
