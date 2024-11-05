@@ -45,6 +45,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let actionBtns = document.querySelectorAll('.fixed-action-btn');
   let actions = M.FloatingActionButton.init(actionBtns);
+
+  // Employment status for navbar - creating for recruiters to check 
+  fetch('/assets/js/work-status.json')
+  .then(response => response.json())
+  .then(data => {
+    const employmentStatus = document.querySelector('.nav-employment-status');
+
+    if (data.openToWork) {
+      employmentStatus.classList.add('open-to-work');
+      employmentStatus.classList.remove('not-open-to-work');
+      employmentStatus.textContent = 'Currently Open to Work';
+    } else {
+      employmentStatus.classList.add('not-open-to-work');
+      employmentStatus.classList.remove('open-to-work');
+      employmentStatus.textContent = 'Not Open to Work'
+    }
+  })
 });
 
 (function dateFunc() {

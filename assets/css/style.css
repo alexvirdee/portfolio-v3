@@ -275,6 +275,7 @@ nav {
 .nav-content {
   display: flex;
   justify-content: space-between;
+  max-height: fit-content;
 }
 
 .logo-container img {
@@ -284,13 +285,28 @@ nav {
   cursor: pointer;
 }
 
-.nav-employment-status-badge {
-  display: flex;
+.nav-employment-status {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  height: 45px;
-  padding: 4px;
+  padding: 0 10px;
+  margin-top: 12px;
   margin-right: 82px;
-  font-size: 16px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  background-color: green;
+  border: 2px solid #04e9fc;
+}
+
+.open-to-work {
+  background-color: green;
+}
+
+.not-open-to-work {
+  background-color: red;
 }
 
 .footer {
