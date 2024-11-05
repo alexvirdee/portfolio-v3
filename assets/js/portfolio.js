@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       employmentStatus.textContent = 'Not Open to Work'
     }
   })
+  .catch(error => console.error("Error fetching employment status:", error));
 });
 
 (function dateFunc() {
