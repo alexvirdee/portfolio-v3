@@ -34,7 +34,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `index.html`,
       filename: `index.html`,
-      apiUrl: `https://maps.googleapis.com/maps/api/js?key=${process.env.maps_key}&callback=initMap`,
+      apiUrl: `https://maps.googleapis.com/maps/api/js?key=${process.env.maps_key}&callback=initMap&libraries=marker&v=beta&loading=async`,
       minify: {
         collapseWhitespace: true,
         keepClosingSlash: true,

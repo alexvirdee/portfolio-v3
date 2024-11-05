@@ -5,10 +5,14 @@ function initMap() {
     zoom: 14,
     center: tampa,
     gestureHandling: 'cooperative',
+    mapId: "996fb601e16c4b78"
   });
 
-  // Marker position at Ft. Lauderdale
-  let marker = new google.maps.Marker({ position: tampa, map: map });
+  // Marker position at Tampa
+  const marker = new google.maps.marker.AdvancedMarkerElement({
+    map,
+    position: tampa,
+});
 }
 
 function getJaxAge() {
