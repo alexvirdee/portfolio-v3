@@ -15,28 +15,28 @@ function initMap() {
 });
 }
 
-function getJaxAge() {
-  // (Note about 1970: A JavaScript date is fundamentally specified as the number of miliseconds that have elapsed since the ECMAScript epoch, which is January 1, 1970)
-  const epoch = 1970;
-  const birthDate = new Date('02/02/2015');
-  // Need to get the current month difference
-  let monthDiff = Date.now() - birthDate.getTime();
+// function getJaxAge() {
+//   // (Note about 1970: A JavaScript date is fundamentally specified as the number of miliseconds that have elapsed since the ECMAScript epoch, which is January 1, 1970)
+//   const epoch = 1970;
+//   const birthDate = new Date('02/02/2015');
+//   // Need to get the current month difference
+//   let monthDiff = Date.now() - birthDate.getTime();
 
-  // Convert the difference in date format
-  let ageDt = new Date(monthDiff);
+//   // Convert the difference in date format
+//   let ageDt = new Date(monthDiff);
 
-  // Extract the year from the date
-  let year = ageDt.getUTCFullYear();
+//   // Extract the year from the date
+//   let year = ageDt.getUTCFullYear();
 
-  // Calculate Jax age
-  let age = Math.abs(year - epoch);
+//   // Calculate Jax age
+//   let age = Math.abs(year - epoch);
 
-  document.getElementById('jax-age').innerHTML = age;
-}
+//   document.getElementById('jax-age').innerHTML = age;
+// }
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  getJaxAge();
+  // getJaxAge();
 
   let onModalClose = () => {
     showLinkBtns();
